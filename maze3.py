@@ -39,24 +39,16 @@ robot.showturtle()
 #---- TODO: change maze here
 wn.bgpic("maze3.png") # other file names should be maze2.png, maze3.png
 
-for step in range(1):
+
+for _ in range(4):
   move()
-for step in range(3):
+
+  for _ in range(3):
+    turn_left()
+
+  move()
   turn_left()
-for step in range(2):
-  move()
-for step in range(1):
-  turn_left()
-for step in range(2):
-  move()
-for step in range(3):
-  turn_left()
-for step in range(2):
-  move()
-for step in range(1):
-  turn_left()
-for step in range(1):
-  move()
+
 #---- end robot movement 
 
 wn.mainloop()
